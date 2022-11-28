@@ -1,0 +1,13 @@
+Note_Eleve = [5, 9, 14, 2, 20, 7]
+
+longeur = len(Note_Eleve)
+somme = 0
+moyenne = 0
+
+for x in Note_Eleve:
+  somme += x
+ 
+moyenne = (somme/longeur)
+  
+print("Somme:", somme)
+print("Moyenne:", moyenne)
