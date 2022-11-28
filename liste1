@@ -5,3 +5,6 @@ print(semaine[5])
 
 longeur = len(semaine)
 print(longeur)
+
+for banane in range(longeur):
+  print(banane, ":", semaine[banane])
