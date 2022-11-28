@@ -1,0 +1,7 @@
+semaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi, "Samedi", "Dimanche"]
+
+print(semaine)
+print(semaine[5])
+
+longeur = len(semaine)
+print(longeur)
