@@ -1,0 +1,21 @@
+from turtle import *
+
+screen = Screen()
+screen.setup(400, 400)
+screen.bgcolor("steel blue")
+
+pen = Turtle()
+pen.color("white")
+pen.shape("turtle")
+pen.goto(0, 0)
+
+pen.speed(0)
+
+cote = 100
+
+for carre in range(100):
+  for c in range (4):
+    pen.fd(cote)
+    pen.left(90)
+  pen.left(15)
+  cote -= 1
