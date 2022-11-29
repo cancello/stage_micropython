@@ -1,3 +1,5 @@
+https://trinket.io/
+
 Note_Eleve = [5, 9, 14, 2, 20, 7]
 
 longeur = len(Note_Eleve)
