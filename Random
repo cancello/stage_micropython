@@ -1,1 +1,10 @@
+#https://python.microbit.org/v/3
+
+from microbit import *
+import random
+
+while True :
+    if accelerometer.current_gesture() =="shake" :
+        yo = random.randint(0, 99)
+        display.show(yo)
 
