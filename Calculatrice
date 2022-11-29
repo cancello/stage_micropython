@@ -1,0 +1,17 @@
+#https://trinket.io/
+
+nombre1 = float(input("Entre ton premier nombre"))
+operateur = input("Entre ton operateur: +, -, *, /")
+nombre2 = float(input("Entre ton deuxième nombre"))
+
+if operateur == ('+'):
+  print (nombre1 + nombre2)
+
+if operateur == ('-'):
+  print (nombre1 - nombre2)
+
+if operateur == ('*'):
+  print (nombre1 * nombre2)
+
+if operateur == ('/'):
+  print (nombre1 / nombre2)
