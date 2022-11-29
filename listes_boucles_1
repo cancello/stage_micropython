@@ -1,3 +1,5 @@
+#https://trinket.io/
+
 semaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi, "Samedi", "Dimanche"]
 
 print(semaine)
