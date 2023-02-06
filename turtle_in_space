@@ -1,0 +1,30 @@
+
+from turtle import *
+
+tableau = Screen()
+tableau.setup(400, 400)
+tableau.bgcolor("#ADFF2F")
+
+pizza = "rocketship.png"
+tableau.addshape(pizza)
+shape(pizza)
+
+def avancer():
+  fd(10)
+  
+def reculer():
+  fd(-10)
+  
+def gauche():
+  left(10)
+
+def droite():
+  right(10)
+  
+tableau.onkey(avancer, "Up")
+tableau.onkey(reculer, "Down")
+tableau.onkey(gauche, "Left")
+tableau.onkey(droite, "Right")
+
+
+tableau.listen()
