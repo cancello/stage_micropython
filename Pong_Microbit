@@ -1,0 +1,58 @@
+#https://trinket.io/
+from microbit import *
+
+x = 2
+y = 4
+
+xball = 2
+yball = 3
+
+xm = 1
+ym = 1
+
+while True:
+    display.clear()
+
+    if yball > 4 :
+
+        display.show(Image.SAD)
+        sleep(1000)
+
+        xball = 2
+        yball = 3
+        ym *= - 1
+
+    x2 = x-1
+    display.set_pixel(x, y, 9)
+    display.set_pixel(x2, y, 9)
+
+    display.set_pixel(xball, yball, 9)
+
+    if button_a.was_pressed():
+        x -= 1
+    if button_b.was_pressed():
+        x += 1
+
+    if x < 1:
+        x = 1
+    if x > 4:
+        x = 4
+
+
+    xball -= xm
+    yball -= ym
+
+    if xball < 1 or xball > 3:
+        xm *= - 1
+
+    if yball < 1 :
+        ym *= - 1
+
+    if yball == 3 and (xball == x or xball == x-1):
+
+        ym *= -1
+
+        
+
+   
+    sleep(333)
