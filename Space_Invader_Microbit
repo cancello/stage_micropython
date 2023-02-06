@@ -1,0 +1,37 @@
+#https://python.microbit.org/v/3
+from microbit import *
+from random import *
+
+x = 2
+y = 4
+
+x_p = randint(0, 4)
+y_p = 0
+
+x_p2 = randint(0, 4)
+
+while True:
+    display.clear()
+
+    display.set_pixel(x, y, 9)
+    display.set_pixel(x_p, y_p, 9)
+    display.set_pixel(x_p2, y_p, 9)
+
+    if button_a.was_pressed() and x > 0:
+        x -= 1
+    if button_b.was_pressed() and x < 4:
+        x += 1
+
+    if y == y_p and (x == x_p or x == x_p2):
+        display.show(Image.SAD)
+        sleep(1000)
+    
+    y_p += 1
+
+    if y_p > 4:
+        x_p = randint(0, 4)
+        x_p2 = randint(0, 4)
+        y_p = 0
+    
+
+    sleep(400)
